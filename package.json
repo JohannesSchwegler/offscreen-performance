@@ -1,20 +1,49 @@
 {
-  "name": "offscreen-performance",
-  "version": "1.0.0",
-  "description": "HTML5 Canvas framework that enables layering, caching, exports, and downloads while using the offscreen-api for better performance results.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JohannesSchwegler/offscreen-performance.git"
-  },
-  "keywords": ["canvas","offscreen-canvas"],
-  "author": "Johannes",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JohannesSchwegler/offscreen-performance/issues"
-  },
-  "homepage": "https://github.com/JohannesSchwegler/offscreen-performance#readme"
+    "name": "offscreen-performance",
+    "version": "1.0.0",
+    "description": "HTML5 Canvas framework that enables layering, caching, exports, and downloads while using the offscreen-api for better performance results.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint . --ext .ts --quiet --fix"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,ts,tsx}": [
+            "eslint --fix"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JohannesSchwegler/offscreen-performance.git"
+    },
+    "keywords": [
+        "canvas",
+        "offscreen-canvas"
+    ],
+    "author": "Johannes",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/JohannesSchwegler/offscreen-performance/issues"
+    },
+    "homepage": "https://github.com/JohannesSchwegler/offscreen-performance#readme",
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^4.8.2",
+        "@typescript-eslint/parser": "^4.8.2",
+        "eslint": "^7.14.0",
+        "husky": "^4.3.0",
+        "lint-staged": "^10.5.2",
+        "prettier-eslint": "^12.0.0",
+        "prettier-eslint-cli": "^5.0.0",
+        "typescript": "^4.1.2"
+    },
+    "dependencies": {
+        "eslint-config-prettier": "^6.15.0",
+        "eslint-plugin-prettier": "^3.1.4",
+        "prettier": "^2.2.1"
+    }
 }
