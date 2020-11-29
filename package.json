@@ -1,0 +1,20 @@
+{
+  "name": "offscreen-performance",
+  "version": "1.0.0",
+  "description": "HTML5 Canvas framework that enables layering, caching, exports, and downloads while using the offscreen-api for better performance results.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohannesSchwegler/offscreen-performance.git"
+  },
+  "keywords": ["canvas","offscreen-canvas"],
+  "author": "Johannes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohannesSchwegler/offscreen-performance/issues"
+  },
+  "homepage": "https://github.com/JohannesSchwegler/offscreen-performance#readme"
+}
